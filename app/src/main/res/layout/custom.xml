@@ -18,13 +18,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <TextView
-                android:layout_width="match_parent"
+                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:id="@+id/mainheading"
                 android:maxLines="2"
                 android:ellipsize="end"
                 android:padding="5dp"
-                android:textColor="@color/black"
+                android:background="@color/best"
+                android:textColor="@color/white"
                 android:text="Main Heading is here ..."
                 android:textStyle="bold"
                 android:textSize="20sp"/>
