@@ -75,6 +75,6 @@
     android:layout_below="@+id/tablayout"
     android:id="@+id/container"
     android:layout_marginTop="0dp"
-    android:background="@color/best"/>
+    android:background="@color/best1"/>
 
 </RelativeLayout>
