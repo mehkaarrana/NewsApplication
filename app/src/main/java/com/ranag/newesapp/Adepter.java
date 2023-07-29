@@ -49,6 +49,7 @@ public class Adepter extends RecyclerView.Adapter<Adepter.ViewHolder> {
         holder.description.setText(arrayList.get(position).getDescription());
         holder.time.setText("     Published At:- "+arrayList.get(position).getPublishedAt());
         Glide.with(context).load(arrayList.get(position).getUrlToImage()).into(holder.imageView);
+        lodAnimation(holder.itemView,position);
 
     }
 
@@ -72,5 +73,9 @@ public class Adepter extends RecyclerView.Adapter<Adepter.ViewHolder> {
             cardView=itemView.findViewById(R.id.cardview);
 
         }
+    }
+      private void lodAnimation(View view,int position){
+        Animation animation= AnimationUtils.loadAnimation(context,android.R.anim.slide_in_left);
+        view.startAnimation(animation);
     }
 }
